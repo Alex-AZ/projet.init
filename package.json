@@ -1,0 +1,19 @@
+{
+  "name": "projet.init",
+  "version": "1.0.0",
+  "description": "park project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alex-AZ/projet.init.git"
+  },
+  "author": "Alexis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alex-AZ/projet.init/issues"
+  },
+  "homepage": "https://github.com/Alex-AZ/projet.init#readme"
+}
