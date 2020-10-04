@@ -1,38 +1,13 @@
 body {
-    background-image:url(https://i.pinimg.com/564x/55/35/51/55355128a426a143692ae2f25fe2f2c2.jpg);
-    background-position: top left;
-    background-size: 50%;
-    background-repeat: no-repeat;
-    opacity: 0.9;
-    z-index: -1;
-    }
-
-    ul {
-      list-style-type: none;
-  }
-
-    /*
-    img {
-        width: 100%;
-        height: auto;
-        opacity: 0.3;
-        position: absolute;
-        right: 0px;
-        top: 0px;
-        left: 0px;
-        bottom: 0px;
-        z-index: -1;
-      }
-      */
-      
-
-    /* 
-.background {    
-background-image: url('../images/PHOTO1_PETERPAN.jpg.jpg');
-background-position: top left;
-background-size: 100%;
-background-repeat: no-repeat;
-opacity: 0.3;
+  background-image: url(https://images3.alphacoders.com/560/thumb-1920-560136.jpg);
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  opacity: 1;
+  z-index: -1;
 }
-    */
 
+ul {
+  list-style-type: none;
+}
