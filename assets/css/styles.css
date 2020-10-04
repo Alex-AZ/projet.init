@@ -16,6 +16,7 @@ Global styles
 */
 
 body {
+  margin: 0;
   background-image: url(https://images3.alphacoders.com/560/thumb-1920-560136.jpg);
   background-position: top center;
   background-size: cover;
@@ -24,6 +25,92 @@ body {
   opacity: 1;
   z-index: -1;
 }
+
+/* h1 {
+  text-align: center;
+  color: rgb(236, 11, 11);
+} */
+
+
+/* NavBar horizontal W3schools */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--dark);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li>a {
+  display: block;
+  color: var(--light);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li>a:hover:not(.active) {
+  background-color: var(--dark);
+}
+
+.active {
+  background-color: var(--title-color);
+}
+/**//**//**//**//**//**//**//**//**/
+
+/* Navbar responsive */
+@media screen and (max-width: 600px) {
+  nav.topnav>ul>li.right, 
+  nav.topnav>ul>li {
+    float: none;
+  }
+}
+
+nav>ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--dark);
+}
+
+nav>ul.topnav>li {
+  float: left;
+}
+
+nav>ul.topnav>li>a {
+  display: block;
+  color: var(--light);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav>ul.topnav>li>a:hover:not(.active) {
+  background-color: var(--dark);
+}
+
+nav>ul.topnav>li>a.active {
+  background-color: var(--title-color);
+}
+
+nav>ul.topnav>li.right {
+  float: right;
+}
+/**//**//**//**//**//**//**//**//**/
+
 
 /* Logo */
 body>header>div>img {
@@ -34,83 +121,4 @@ body>header>div>img {
   height: 250px;
   max-width: 100%;
   height: auto;
-}
-
-/* h1 {
-  text-align: center;
-  color: rgb(236, 11, 11);
-} */
-
-body>header>nav {
-  color: var(--light);
-  background-color: var(--dark);
-}
-
-body>header>nav>ul {
-  list-style-type: none;
-}
-
-.flex-container {
-  display: flex;
-  flex-direction: row;
-}
-
-/* Appearance of buttons */
-.btn { 
-  display: inline-block; /* Displays an element as an inline block */
-  border: solid 1px var(--secondary);
-  width: 128px;
-  padding: 16px 8px 1em 8px 16px; /* Shortened inner margin (left, top, right, bottom) */
-}
-
-
-/* Design burger button */
-#burger-btn {
-  display: none;
-  width: 80px;
-  height: 80px;
-  padding: 6.4px;
-  background-color: var(--secondary);
-  color: var(--light);
-  font-weight: bold;
-}
-
-@media screen and (max-width: 576px) {
-  header>nav>ul.flex-container {
-    flex-direction: column;
-    display: none;
-  }
-  #burger-btn {
-    display: block;
-  }
-}
-
-header>nav>ul>li {
-  width: 160px;
-  margin-right: 8px;
-}
-
-nav>ul>li>a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* Initial state */
-nav>ul>li>a.btn {
-  transition: color 0.6s 0.2s ease-in, transform 0.4s 0.4s linear, background-color 0.8s 0.7s ease-out;
-}
-
-/* Final state */
-nav>ul>li>a.btn:hover {
-  color: var(--dark);
-  background-color: var(--light);
-}
-
-.bg-dark {
-  background-color: var(--dark);
-  color: var(--light);
-}
-
-.shadowed {
-  box-shadow: var(--secondary) 1px 3px;
 }
